@@ -1,5 +1,5 @@
 import re 
-#with open('espanol.txt', 'r', encoding='latin-1') as f:
+#with open('italiano.txt', 'r', encoding='latin-1') as f:
    # texto_espanol = f.read()
 
 texto_espanol =" Ciao! Nel 2025, 23 designer creano insieme. Lista: matita, carta, righello. Il prezzo è €90,80. Le stelle (★) brillano sopra il foglio. 17 gatti disegnano, 16 cani creano. Il codice #7788 è speciale. 20 giorni di creatività, 16 di riposo. @tutti creano. Il numero magico è 1434. Cosa faresti con 57,90€? La risposta è nella lista: disegnare, creare, innovare. Immagina il tuo mondo! 100 parole, 20 interi, 3 decimales, 2 listas."
@@ -9,8 +9,7 @@ flotantes= r"\b-?\d+\,\d+\b"
 booleanos = r"\b(True|False)\b"
 strings = r'"(.*?)"'
 listas =  r"(?i)lista:\s*([^.\n]+)"
-palabras =  r"\b[a-zA-ZáéíóúÁÉÍÓÚñÑüÜ]+\b"
-
+palabras = r"\b[a-zA-ZáéíóúÁÉÍÓÚàèìòùÀÈÌÒÙñÑüÜ]+\b"
 
 buscar_enteros = re.findall(enteros,texto_espanol) 
 buscar_flotantes = re.findall( flotantes,texto_espanol)
