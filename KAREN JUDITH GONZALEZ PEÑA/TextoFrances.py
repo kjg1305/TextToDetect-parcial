@@ -9,7 +9,10 @@ flotantes= r"-?\b\d+\,\d+\b"
 booleanos = r"\b(True|False)\b"
 strings = r'"(.*?)"'
 listas =  r"(?i)liste:\s*([^.\n]+)"
-palabras =   r"\b[a-zA-ZáéíóúÁÉÍÓÚàèìòùÀÈÌÒÙñÑüÜ]+\b"
+palabras =   r"\b[a-zA-ZáéíóúÁÉÍÓÚàèìòùÀÈÌÒÙñÑüÜ]+\b" 
+#palabras = r"\b[\wáéíóúÁÉÍÓÚàèìòùÀÈÌÒÙñÑüÜ]+\b"
+
+
 
 
 buscar_enteros = re.findall(enteros,texto_espanol) 

@@ -10,7 +10,7 @@ booleanos = r"\b(True|False)\b"
 strings = r'"(.*?)"'
 listas =  r"(?i)lista:\s*([^.\n]+)"
 palabras = r"\b[a-zA-ZáéíóúÁÉÍÓÚàèìòùÀÈÌÒÙñÑüÜ]+\b"
-
+#palabras = r"\b[\wáéíóúÁÉÍÓÚàèìòùÀÈÌÒÙñÑüÜ]+\b"
 buscar_enteros = re.findall(enteros,texto_espanol) 
 buscar_flotantes = re.findall( flotantes,texto_espanol)
 buscar_booleanos = re.findall( booleanos,texto_espanol)
